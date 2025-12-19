@@ -1,128 +1,153 @@
-📊 Attendance Predictor (Python)
+<h1 align="center">📊 Attendance Predictor (Python)</h1>
 
-A simple yet powerful Python console application that helps students predict their future attendance percentage based on how many classes they plan to attend or bunk.
+<p align="center">
+A simple and interactive <b>Python console application</b> that helps students
+predict their future attendance percentage based on how many classes they plan
+to <b>attend or bunk</b>.
+</p>
 
-Designed to be beginner-friendly, practical, and realistic for college use.
+<hr>
 
-🚀 Features
+<h2>🚀 Features</h2>
+<ul>
+  <li>Accepts current total classes and attendance percentage</li>
+  <li>Predicts future attendance after attending or bunking classes</li>
+  <li>Displays total classes, attended classes, missed classes</li>
+  <li>Shows predicted attendance percentage</li>
+  <li>Built-in <b>75% Attendance Planner</b></li>
+  <ul>
+    <li>Maximum safe bunks allowed</li>
+    <li>Minimum classes required to reach 75%</li>
+  </ul>
+  <li>Handles invalid inputs safely</li>
+</ul>
 
-📥 Accepts:
+<hr>
 
-Total classes held so far
+<h2>🛠️ Tech Stack</h2>
+<ul>
+  <li><b>Language:</b> Python 🐍</li>
+  <li><b>Module:</b> math</li>
+</ul>
 
-Current attendance percentage
+<hr>
 
-🔮 Predicts future attendance after:
+<h2>🧠 How It Works</h2>
+<ol>
+  <li>User enters total classes and current attendance</li>
+  <li>User chooses to attend or bunk classes</li>
+  <li>Program recalculates attendance</li>
+  <li>Displays prediction and 75% planning advice</li>
+</ol>
 
-Attending more classes
+<hr>
 
-Bunking more classes
+<h2>▶️ Sample Test Cases</h2>
 
-📈 Displays:
+<h3>✅ Test Case 1: Attendance Already Safe</h3>
+<pre>
+Input:
+Total Classes Held: 100
+Current Attendance: 80
+Choice: Attend
+Planned Classes: 5
 
-Updated total classes
+Output:
+Predicted Attendance: 81.82%
+You can safely bunk up to some classes
+Attendance already above 75%
+</pre>
 
-Classes attended
+<h3>⚠️ Test Case 2: Attendance Drops Due to Bunking</h3>
+<pre>
+Input:
+Total Classes Held: 100
+Current Attendance: 78
+Choice: Bunk
+Planned Classes: 10
 
-Classes missed
+Output:
+Predicted Attendance: 70.90%
+You need to attend more classes to reach 75%
+</pre>
 
-Predicted attendance percentage
+<h3>📈 Test Case 3: Recovering From Low Attendance</h3>
+<pre>
+Input:
+Total Classes Held: 80
+Current Attendance: 60
+Choice: Attend
+Planned Classes: 20
 
-🎯 Built-in 75% Attendance Planner
+Output:
+Predicted Attendance: 66.67%
+Still below 75%
+Shows minimum classes required to reach target
+</pre>
 
-Maximum classes you can safely bunk
+<h3>🚨 Test Case 4: Edge Case (Very Low Attendance)</h3>
+<pre>
+Input:
+Total Classes Held: 50
+Current Attendance: 30
+Choice: Attend
+Planned Classes: 30
 
-Minimum classes required to reach 75%
+Output:
+Predicted Attendance: 50.00%
+Significant effort required to reach 75%
+Planner gives exact count
+</pre>
 
-🛑 Robust input validation for safe execution
+<h3>❌ Test Case 5: Invalid Input Handling</h3>
+<pre>
+Input:
+Total Classes Held: -10
+Current Attendance: 110
 
-🛠️ Tech Stack
+Output:
+[ERROR] Invalid input! Please enter valid numbers.
+</pre>
 
-Language: Python 🐍
+<hr>
 
-Module Used:
+<h2>▶️ How to Run</h2>
 
-math – for accurate floor and ceiling calculations
-
-🧠 Program Logic Overview
-
-Take current attendance data from the user
-
-Let the user choose whether to:
-
-Attend more classes, or
-
-Bunk more classes
-
-Recalculate:
-
-Total classes
-
-Attended classes
-
-Attendance percentage
-
-Suggest a plan to maintain or reach 75% attendance
-
-▶️ Sample Output
-=========================================
-           ATTENDANCE PREDICTOR
-=========================================
-Total Classes Held After Plan : 120
-Classes Attended               : 90
-Classes Missed                 : 30
-Predicted Attendance %         : 75.00%
-
-75% ATTENDANCE PLANNER:
-You can safely bunk up to : 0 classes to maintain >= 75%
-Great! Your attendance is already above 75%.
-=========================================
-
-🧪 Input Validation
-
-The program safely handles:
-
-Negative inputs
-
-Attendance percentage outside 0–100
-
-Invalid menu choices
-
-Logical errors (attended > total)
-
-▶️ How to Run
-
-Save the file as attendance_predictor.py
-
-Run using:
-
+<pre>
 python attendance_predictor.py
+</pre>
 
-💡 Use Cases
+<hr>
 
-College students planning attendance
+<h2>🧪 Input Validation</h2>
+<ul>
+  <li>Prevents negative values</li>
+  <li>Ensures attendance percentage is between 0–100</li>
+  <li>Detects logical inconsistencies</li>
+</ul>
 
-Avoiding last-minute attendance panic 😅
+<hr>
 
-Understanding how bunks affect attendance
+<h2>💡 Use Cases</h2>
+<ul>
+  <li>College attendance planning</li>
+  <li>Avoiding attendance shortage panic</li>
+  <li>Beginner-friendly Python logic project</li>
+</ul>
 
-Python beginners practicing real-world logic
+<hr>
 
-🌱 Future Enhancements
+<h2>🌱 Future Improvements</h2>
+<ul>
+  <li>GUI version (Tkinter)</li>
+  <li>Web app (Flask / Streamlit)</li>
+  <li>Semester attendance tracker</li>
+</ul>
 
-GUI version (Tkinter)
+<hr>
 
-Web app (Flask / Streamlit)
-
-Semester-end attendance planner
-
-Mobile app version
-
-🤝 Contributions
-
-Contributions, suggestions, and improvements are welcome!
-Feel free to fork the repository and submit a pull request.
-
-⭐ Support
-
-If you find this project helpful, give it a ⭐ and plan your attendance smartly 😉
+<h2>⭐ Support</h2>
+<p>
+If you like this project, give it a ⭐<br>
+<b>Stay consistent and plan smart!</b>
+</p>
